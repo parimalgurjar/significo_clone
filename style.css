@@ -1,0 +1,82 @@
+:root{
+    --salmon:salmon;
+    --black:black;
+    --white:white;
+    --cyan:#AEDEE0;
+    --dsalmon:rgb(53, 6, 0);
+    --dcyan:rgb(22, 35, 35);
+}
+.vdodiv {
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+body{
+    transition: background-color ease-out 1s;
+}
+
+*::selection{
+    background-color: var(--salmon)
+}
+
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color:var(--white);
+}
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+body[theme="salmon"] .section{
+    color: var(--dsalmon);
+}
+body[theme="white"]{
+    background-color: var(--white);
+}
+body[theme="white"] .section{
+    color: var(--black);
+}
+.pers {
+    
+    margin-top: -12rem!important;
+}
+.listelem {
+    position: relative;
+    display: inline-block;
+}
+
+.picture img {
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.listelem:hover .picture img {
+    transform: scale(1);
+}
+.min-footer{
+    background-color: #F5F19C;
+}
+.btn-f{
+    background-color: black!important;
+    padding: 14px 45px;
+    color:  #F5F19C;
+    
+}
+@font-face {
+    font-family: "f-one";
+    src: url("./font/f-one.woff");
+}
+@font-face {
+    font-family: "f-two";
+    src: url("./font/f-two.ttf");
+}
+@font-face {
+    font-family: "f-three";
+    src: url("./font/f-three.woff");
+}
